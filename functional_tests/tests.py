@@ -11,7 +11,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.browser.implicitly_wait(3)
 
     def tearDown(self):
-        time.sleep(5)
         self.browser.quit()
 
     def test_layout_and_styling(self):
